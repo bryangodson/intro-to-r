@@ -30,7 +30,4 @@ Each module has:
 - (Later) RStudio
 
 ---
-
-## 📈 Why This Repo?
-
 Let’s learn the R way. 🔥
