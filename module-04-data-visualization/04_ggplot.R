@@ -33,3 +33,10 @@ ggplot(mtcars %>% arrange(mpg),aes(x=seq_along(mpg),y=mpg))+
   geom_line(color="purple")+
   labs(title="MPG Accross Cars",x="Car Index(Sorted by MPG)",y="MPG")+
   theme_bw()
+##combine multiple layers
+ggplot(mtcars, aes(x = hp, y = mpg)) +
+  geom_point(color = "skyblue") +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  labs(title = "Horsepower vs. MPG with Linear Fit") +
+  theme_minimal()
+
